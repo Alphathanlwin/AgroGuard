@@ -1,0 +1,12 @@
+{
+  "name": "agroguard",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n be,fe -c green,cyan \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd Agri/agriculture/frontend && npm run dev",
+    "dev:backend": "node scripts/start-backend.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
