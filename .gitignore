@@ -31,3 +31,6 @@ build/
 # OS
 .DS_Store
 Thumbs.db
+
+# Training datasets
+**/[Ii]mage_[Tt]rianing_dataset/

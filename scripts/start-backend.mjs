@@ -4,7 +4,7 @@ import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
-const backendDirectory = join(projectRoot, 'fastapi')
+const backendDirectory = join(projectRoot, 'backend')
 const virtualEnvironmentPython = process.platform === 'win32'
   ? join(backendDirectory, '.venv', 'Scripts', 'python.exe')
   : join(backendDirectory, '.venv', 'bin', 'python')
